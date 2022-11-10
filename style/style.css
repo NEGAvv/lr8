@@ -2,23 +2,25 @@
 
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+  }
+  body  {
+    background: radial-gradient(circle, rgb(245, 125, 1), rgb(252, 3, 23));
+    animation: colorChange 7s infinite alternate cubic-bezier(0.4, 0.7, 0.6, 0.4);
   }
   
   section {
+    width: 100%;
     height: 100vh;
-    background: radial-gradient(circle, rgb(245, 125, 1), rgb(252, 3, 23));
-    animation: colorChange 7s infinite alternate cubic-bezier(0.4, 0.7, 0.6, 0.4);
-    font-family: sans-serif;
   }
   
   .score {
     color: rgb(224, 224, 224);
-    height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
   }
   .score h2 {
     font-size: 30px;
@@ -30,23 +32,22 @@
   }
   
   .match button {
-    width: 150px;
-    height: 50px;
-    background: none;
+    width: 40%;
+    height: 10%;
     border: none;
     color: rgb(224, 224, 224);
     font-size: 20px;
     background: rgb(45, 117, 96);
     border-radius: 3px;
     cursor: pointer;
+    margin: 3% 2%;
   }
   
   .match {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .winner {
     color: rgb(224, 224, 224);
@@ -59,6 +60,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  img {
+    width: 50%;
   }
   
   .player-hand {
