@@ -4,7 +4,7 @@ setTimeout(() => {
   {
       nickname=prompt(`Input your nickname correctly`)
   }
-  player_nickname.nextSibling.textContent=nickname
+  player_nickname.textContent=nickname
 }, 20);
 
 const game = () => {
